@@ -13,4 +13,10 @@ A browser-based typing speed test game built with HTML, CSS, and JavaScript.
 - CSS3
 - JavaScript
 
-## 📂 Project Structure
+## How to run the game
+use this link https://johnpaulomendoza.github.io/JohnPauloMendoza-DC101_TypingTest_MendozaJohnPaulo/
+
+## Game Screenshots
+
+
+
