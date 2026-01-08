@@ -22,7 +22,6 @@ startButton.addEventListener("click", startTest);
 
 function startTest() {
     const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-    const bestWpmElement = document.getElementById("best-wpm");
     quoteElement.textContent = randomQuote;
 
     inputElement.value = "";
@@ -36,12 +35,7 @@ function startTest() {
     timerInterval = setInterval(updateTime, 1000);
 
     startButton.disabled = true;
-    
 }
-
-// Load best WPM from localStorage
-let bestWPM = localStorage.getItem("bestWPM") || 0;
-bestWpmElement.textContent = bestWPM;
 
 // Update timer
 function updateTime() {
@@ -66,6 +60,3 @@ function calculateWPM() {
     const wpm = Math.round(wordCount / totalTime);
     wpmElement.textContent = wpm;
 }
-
-
-
