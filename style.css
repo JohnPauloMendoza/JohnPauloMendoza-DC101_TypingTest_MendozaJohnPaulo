@@ -78,11 +78,6 @@ button:hover {
     max-width: 120px;
     height: auto;
 }
-.stats p {
-    font-weight: bold;
-}
 
-#best-wpm {
-    color: green;
-}
+
 
