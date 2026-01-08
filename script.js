@@ -61,18 +61,11 @@ inputElement.addEventListener("input", () => {
 
 // Calculate Words Per Minute
 function calculateWPM() {
-    const totalTime = (new Date() - startTime) / 1000 / 60; // minutes
+    const totalTime = Math.floor((new Date() - startTime) / 1000) / 60;
     const wordCount = quoteElement.textContent.split(" ").length;
     const wpm = Math.round(wordCount / totalTime);
-
     wpmElement.textContent = wpm;
-
-    // Check and update best WPM
-    if (wpm > bestWPM) {
-        bestWPM = wpm;
-        localStorage.setItem("bestWPM", bestWPM);
-        bestWpmElement.textContent = bestWPM;
-    }
 }
+
 
 
